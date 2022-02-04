@@ -1,0 +1,510 @@
+/* CSS GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+/* CSS SECCIÓN HEADER */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/portada.png);
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.header__logo {
+    width: 13rem;
+}
+
+nav {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.nav__contenedor1 {
+    width: 100%;
+    height: 112px;
+    background-color: rgb(11, 35, 88,0.6);
+    position: fixed;
+    z-index: 10;
+}
+
+.nav__contenedor2 {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.lista__item {
+    list-style: none;
+}
+
+.lista__item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* .header__busqueda {
+    width: 2rem;
+    color: #ffffff;
+} */
+
+.header__form fieldset {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.header__input-busqueda, .header__boton-busqueda {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding: 0;
+}
+
+.header__input-busqueda {
+    border: none;
+    color: #666;
+}
+
+.header__input-busqueda:focus {
+    outline: none;
+}
+
+.header__boton-busqueda {
+    border: none;
+    width: 40px;
+    background-color: #FE9021;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+.boton__icono {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* CSS SECCIÓN PORTADA */
+
+.portada__contenedor {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portada__titulo {
+    margin: 0;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.portada__subtitulo {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+/* CSS SECCIÓN CATEGORÍAS */
+
+.categorias {
+    width: 70%;
+    margin: auto;
+    margin-top: 10vh;
+    /* margin-bottom: 10vh; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px 50px;
+    justify-content: space-evenly;
+}
+
+.categorias__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.categorias__contenedor--reel {
+    background-image: url(../imagenes/reel.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.categorias__contenedor--señuelos {
+    background-image: url(../imagenes/señuelos.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.categorias__contenedor--indumentaria {
+    background-image: url(../imagenes/indumentaria.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.categorias__contenedor--cañas {
+    background-image: url(../imagenes/caña.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.categorias__contenedor--cuchillos {
+    background-image: url(../imagenes/cuchillos.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.categorias__contenedor--lineas {
+    background-image: url(../imagenes/lineas.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.categorias__titulo {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.categorias__boton {
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #FE9021;
+    border: none;
+}
+
+.categorias__contenedor:hover .categorias__boton {
+    background-color: rgb(11, 35, 88);
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+/* CSS SECCIÓN OFERTAS */
+
+.ofertas {
+    width: 70%;
+    margin: auto;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.ofertas__contenedor {
+    background-color: #ffffff;
+    width: 100%;
+    height: 60%;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.ofertas__contenedor:hover {
+    background-color: rgb(11, 35, 88);
+    color: #FFFFFF;
+}
+
+.ofertas__contenedor:hover .ofertas__marca, .ofertas__contenedor:hover .ofertas__modelo, .ofertas__contenedor:hover .ofertas__precio, .ofertas__contenedor:hover .ofertas__precioTachado {
+    color: #FFFFFF;
+}
+
+.ofertas__contenedor--reel {
+    background-image: url(../imagenes/reel_fondo_blanco2.png);
+    background-size: cover;
+}
+
+.ofertas__contenedor--señuelo {
+    background-image: url(../imagenes/señuelo_sin_fondo2.png);
+    background-size: cover;
+    background-position-y: center;
+}
+
+.nombres__contenedor {
+    margin-top: 20px;
+}
+
+.ofertas__marca {
+    font-size: 3.2rem;
+    color: #121212;
+    font-weight: 400;
+    position: relative;
+    left: 50px;
+}
+
+.ofertas__modelo {
+    font-size: 2.5rem;
+    color: #121212;
+    font-weight: 300;
+    position: relative;
+    left: 100px;
+}
+
+.precios__contenedor {
+    position: relative;
+    left: 100px;
+}
+
+.ofertas__precio {
+    font-size: 2.3rem;
+    color: #121212;
+    font-weight: 400;
+}
+
+.ofertas__precioTachado {
+    font-size: 1.7rem;
+    color: #121212;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.ofertas__boton {
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #FE9021;
+    align-self: flex-end;
+    position: relative;
+    bottom: -30px;
+    right: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* CSS SECCIÓN INSTAGRAM */
+
+.instagram {
+    background-image: url(../imagenes/paisaje_nevado.png);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.instagram__contenedor {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+}
+
+.instagram__item {
+    border-radius: 15px;
+}
+
+.instagram__item--1{
+    background-image: url(../imagenes/seccion_instagram/pesca1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram__item--2{
+    background-image: url(../imagenes/seccion_instagram/pesca2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram__item--3{
+    background-image: url(../imagenes/seccion_instagram/pesca3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram__item--4{
+    background-image: url(../imagenes/seccion_instagram/pesca4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram__item--5{
+    background-image: url(../imagenes/seccion_instagram/pesca5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram__item--6{
+    background-image: url(../imagenes/seccion_instagram/pesca6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram__item--7{
+    background-image: url(../imagenes/seccion_instagram/pesca7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram__item--8{
+    background-color: rgb(254, 144, 33, 0.85);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.instagram__logo {
+    color: #121212;
+}
+
+.instagram__texto {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #121212;
+}
+
+.instagram__item--8:hover {
+    background-color: rgb(11, 35, 88, 0.8);
+}
+
+.instagram__item--8:hover .instagram__logo, .instagram__item--8:hover .instagram__texto {
+    color: #FFFFFF;
+}
+
+/* CSS SECCIÓN PAGO */
+
+.pago {
+    width: 80%;
+    margin: auto;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.pago__contenedor {
+    width: 40%;
+    height: 40%;
+    /* background-color: tomato; */
+}
+
+.pago__contenedor--visa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pago__logo {
+    width: 100%;
+    height: 100%;
+}
+
+.pago__logo--visa {
+    width: 90%;
+    height: 90%;
+}
+
+/* CSS SECCIÓN FOOTER */
+
+footer {
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(11, 35, 88, 0.9);
+}
+
+.footer__contenedor {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.footer__list li {
+    list-style: none;
+}
+
+.footer__list--politicas {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__list--politicas a {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.footer__redes {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__redes a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer__list--nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__list--nav a {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* QUIENES SOMOS */
+/* ------------------------------------------------------------------------ */
+
+
