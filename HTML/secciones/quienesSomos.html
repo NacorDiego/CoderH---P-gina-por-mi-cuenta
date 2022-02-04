@@ -11,43 +11,37 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
-
-    <div class="contenedorHeader">
-        <header>
-            <nav class="nav">
-                <!-- LOGO -->
-                <a href="../index.html" class="nav__logo">
-                    <img class="nav__imgLogo" src="../imagenes/logo2.svg" alt="Logo">
+    <!-- SECCIÓN HEADER -->
+    <header>
+        <div class="nav__contenedor1 nav__contenedor1--QS">
+            <div class="nav__contenedor2">
+                <a href="../index.html">
+                    <img src="../imagenes/svg/logo2.svg" alt="logo del sitio web" class="header__logo">
                 </a>
-                
-                <!-- BARRA DE NAVEGACIÓN -->
-                <ul class="nav__lista">
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Pesca</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Señuelos</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Camping</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Indumentaria</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Cuchilleria</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Otros</a>
-                    </li>
-                </ul>
-                        
-                <!-- ICONO DE LUPA (BUSQUEDA)-->
-                <i class="fas fa-search nav__busqueda"></i>
-            </nav>
-        </header>
-    </div>
+                <nav>
+                    <ul class="nav__lista">
+                        <li class="lista__item"><a href="">Reel's</a></li>
+                        <li class="lista__item"><a href="">Cañas</a></li>
+                        <li class="lista__item"><a href="">Señuelos</a></li>
+                        <li class="lista__item"><a href="">Cuchillos</a></li>
+                        <li class="lista__item"><a href="">Indumentaria</a></li>
+                        <li class="lista__item"><a href="">Lineas</a></li>
+                    </ul>
+                </nav>
+                <!-- <img src="./imagenes/svg/lupa.svg" alt="busqueda" class="header__busqueda"> -->
+                <form action="" class="header__form">
+                    <fieldset>
+                        <input type="search" class="header__input-busqueda" placeholder=" Buscar...">
+                        <button type="submit" class="header__boton-busqueda">
+                            <i class="fas fa-search boton__icono"></i>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
 
+    <!-- SECCIÓN MAIN -->
     <div class="contenedor">
         <!-- Artículo de la página -->
         <article class="quienes">
@@ -85,65 +79,33 @@
         </article>
     </div>
 
-    <div class="contenedorFooter">
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer__arriba">
-                <!-- Redes sociales -->
-                <div class="footer__contenedor footer__contenedor--redes">
-                    <ul class="footer__lista">
-                        <li class="footer__itemLista--redes itemLista">
-                            <span class="footer__encabezado">Seguinos en nuestras redes:</span>
-                            <a href="https://es-la.facebook.com/" target="_blank" class="icono-facebook">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                                <i class="fab fa-instagram-square"></i>
-                            </a>
-                        </li>
-                        <li class="footer__itemLista--whatsapp itemLista">
-                            <!-- WHATSAPP -->
-                            <span class="footer__encabezado">Hablanos por Whatsapp: </span>
-                            <i class="fab fa-whatsapp-square"></i>
-                        </li>
-                        <li class="footer__itemLista itemLista">
-                            <!-- Teléfono fijo -->
-                            <span class="footer__encabezado">Llamanos por teléfono:</span>
-                            <i class="fas fa-phone-square"></i>
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- Horarios de atención -->
-                <div class="footer__contenedor footer__contenedor--horarios">                
-                    <p class="footer__encabezado--horarios"><i class="fas fa-clock"></i> Horarios de atención:</p>                
-                    <span>Lunes a Sábados de 9:00 a 12:30 y de 16:00 a 20:00</span>
-                </div>
-                
-                <div class="footer__contenedor footer__contenedor--secciones">
-                    <!-- LINKS FOOTER -->
-                    <ul class="footer__lista footer__lista--secciones">
-                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="#">Quienes somos</a>
-                        </li>
-                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./preguntasFrecuentes.html">Preguntas frecuentes</a>
-                        </li>
-                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./blog.html">Blog</a>
-                        </li>
-                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./contacto.html">Contacto</a>                    
-                        </li>
-                    </ul>        
-                </div>
+    <!-- SECCIÓN FOOTER -->
+    <footer>
+        <div class="footer__contenedor">
+            <span class="footer__copyright">© por NDiego</span>
+            <ul class="footer__list footer__list--politicas">
+                <a href="#">Políticas de privacidad</a>
+                <a href="#">Políticas de cookies</a>
+            </ul>
+            <div class="footer__redes">
+                <a href="#">
+                    <i class="fab fa-2x fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-2x fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-2x fa-whatsapp"></i>
+                </a>
             </div>
-    
-            <div class="footer__contenedor--copyright">
-                <span class="footer__copyright">Copyright 2022 © by NDiego</span>
-            </div>
-        </footer>
-    </div>
+            <ul class="footer__list footer__list--nav">
+                <a href="">Quienes somos</a>
+                <a href="">Preguntas frecuentes</a>
+                <a href="">Blog</a>
+                <a href="">Contacto</a>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>
