@@ -8,6 +8,7 @@
 
 body {
     font-family: 'roboto', sans-serif;
+    position:absolute;
 }
 
 /* CSS SECCIÓN HEADER */
@@ -507,7 +508,27 @@ footer {
 /* QUIENES SOMOS */
 /* ------------------------------------------------------------------------ */
 
+/* CSS NAVEGACIÓN */
 .nav__contenedor1--QS {
     background-color: rgb(11, 35, 88,0.8);
     display: inline-block;
 }
+
+.contenedor {
+	margin-top:120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
