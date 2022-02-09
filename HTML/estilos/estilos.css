@@ -520,10 +520,18 @@ footer {
 
 /* CSS MAIN */
 
+main {
+    display: block;
+    min-height: 105vh;
+}
+
+footer {
+    display: block;
+}
+
 .contenedor {
     width: 80%;
     margin: auto;
-    height: 105vh;
 	margin-top:120px;
     display: grid;
     grid-template-columns: 100%;
@@ -538,7 +546,7 @@ footer {
     text-align: center;
     font-size: 4.5rem;
     color: #0B2358;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .tracking-in-expand {
@@ -641,15 +649,17 @@ footer {
 
 .secciones__titulo {
     font-size: 3rem;
+    font-weight: 500;
 }
 
 .secciones__texto {
     font-size: 1.3rem;
+    font-weight: 300;
 }
 
 .personal__titulo-persona {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .personal__persona {
